@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contenedor{
+    width: 350px;
+    height: 600px;    
+    margin: 160px auto;
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow:0px 20px 8px 10px hsl(217, 54%, 11%);
+}
+
+.contenedor_img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.contenedor_img img{
+    object-fit: cover;
+    width: 300px;
+    height: 90%;
+    margin: 20px 25px; 
+    border-radius: 16px;
+}
+
+.contenedor_text{
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    text-align: justify;
+    margin-top: -8px;
+}
+
+.contenedor_text p{
+    font-size: 24px;
+    color: #fff;
+    margin: 16px 0px;
+}
+
+.contenedor_text span{
+    font-size: 16px;
+    color:  hsl(215, 51%, 70%);   
+}
+
+.contenedor_text_eth{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    margin-bottom: 16px;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+}
+
+.contenedor_text_eth p{
+    font-size: 16px;
+    margin-top: 20px;    
+}
+
+.contenedor_text_eth .eth{
+    color: hsl(178, 100%, 50%);
+    height: 24px;
+}
+
+
+.contenedor_text_eth .days{
+    color:hsl(215, 51%, 70%);
+    text-align: end;
+}
+
+.contenedor_text_end{
+    width: 100%;
+    height: 16%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    justify-items: center;
+    align-items: start;
+    align-content: center;
+}
+
+.contenedor_text_end img{
+    width: 80%;
+    object-fit: cover;    
+    border: 1px solid #fff;
+    border-radius: 20px;
+    display: inline-block;
+    
+}
+
+.contenedor_text_end p{
+    display: inline-block;
+    width: 100%;
+    margin-left: 8px;
+    font-size: 16px;   
+}
+
+
+@media only screen and (max-width:380px){
+    .contenedor{
+        width:80%;
+        height: 580px;
+        margin-top: 20px;
+    }
+
+    .contenedor_img{
+        width: 100%;
+    }
+    .contenedor_img img{
+        width: 90%;
+        margin: 10px 15px; 
+    }
+    .contenedor_text{
+        width: 90%;
+        height: 70%;
+        text-align: start;
+    }
+    
+    .contenedor_text_eth .eth {
+        height: 26px;
+    }
+    .contenedor_text p{
+        margin: 14px 0px;
+    }
+    .contenedor_text_end p{
+        font-size: 14px;
+        margin: 7px;
+    }
+}
